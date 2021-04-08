@@ -1,7 +1,9 @@
 import folium
-map = folium.Map(location=[42.065503036286756, -90.6765141173417], zoom_start=6, tiles="Stamen Terrain")
+map = folium.Map(location=[42.065503036286756, -90.6765141173417], zoom_start=5, tiles="Stamen Terrain")
+
 
 fg = folium.FeatureGroup(name="My Map")
+
 fg.add_child(folium.Marker(location=[42.018879, -90.753932], popup="My Childhood Farm House", icon=folium.Icon(color='green')))
 fg.add_child(folium.Marker(location=[42.065300, -90.677113], popup="My Home During High School", icon=folium.Icon(color='green')))
 fg.add_child(folium.Marker(location=[42.002619, -90.605518], popup="My Elementary School: Delwood Elementary School", icon=folium.Icon(color='red')))
@@ -15,9 +17,21 @@ fg.add_child(folium.Marker(location=[41.759665, -90.457964], popup="Best Catfish
 fg.add_child(folium.Marker(location=[42.021184, -90.809913], popup="Shot First Deer with Bow", icon=folium.Icon(color='pink')))
 fg.add_child(folium.Marker(location=[41.694112, -90.585214], popup="Grandpa Dick's House", icon=folium.Icon(color='orange')))
 fg.add_child(folium.Marker(location=[41.438638, -91.051200], popup="Grandma Harkey's House", icon=folium.Icon(color='orange')))
-
-
-
+fg.add_child(folium.Marker(location=[39.731160, -91.390666], popup="My College: Hannibal LaGrange University", icon=folium.Icon(color='red')))
+fg.add_child(folium.Marker(location=[39.185828, -94.574656], popup="My Seminary: Midwestern Baptist Theological Seminary", icon=folium.Icon(color='red')))
+fg.add_child(folium.Marker(location=[36.120986, -115.255106], popup="My Parents House During College", icon=folium.Icon(color='green')))
+fg.add_child(folium.Marker(location=[36.125759, -115.290990], popup="My Church During College: First Baptist Church of the Lakes", icon=folium.Icon(color='green')))
+fg.add_child(folium.Marker(location=[36.168747, -116.015598], popup="My Parent's House During Seminary", icon=folium.Icon(color='green')))
+fg.add_child(folium.Marker(location=[41.742131, -93.605510], popup="My Parent's House Now", icon=folium.Icon(color='green')))
+fg.add_child(folium.Marker(location=[43.37355473655095, -71.73188525485592], popup="Our First New Hampshire Home", icon=folium.Icon(color='green')))
+fg.add_child(folium.Marker(location=[36.08018292648054, -115.14410178188952], popup="Where I Met My Bride", icon=folium.Icon(color='pink')))
+fg.add_child(folium.Marker(location=[43.33299770530089, -71.6548371298819], popup="My First Pastorate", icon=folium.Icon(color='black')))
+fg.add_child(folium.Marker(location=[43.453336376528824, -71.63886969448254], popup="Our House", icon=folium.Icon(color='green')))
+fg.add_child(folium.Marker(location=[42.90993443413205, -71.42141412735549], popup="Where I Currently Work", icon=folium.Icon(color='orange')))
+fg.add_child(folium.Marker(location=[43.211908711567, -71.53752106707024], popup="Our Church: Reformation Bible Church", icon=folium.Icon(color='blue')))
+fg.add_child(folium.Marker(location=[43.197446787792344, -71.56230288791544], popup="Where James Was Born", icon=folium.Icon(color='white')))
+fg.add_child(folium.Marker(location=[43.205464025061836, -71.53772966913976], popup="Where We Got Married", icon=folium.Icon(color='pink')))
+fg.add_child(folium.Marker(location=[43.215114180773746, -71.50706865122623], popup="Where I Proposed to Kristal", icon=folium.Icon(color='pink')))
 
 map.add_child(fg)
 

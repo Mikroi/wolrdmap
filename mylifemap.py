@@ -32,6 +32,7 @@ fg.add_child(folium.Marker(location=[43.211908711567, -71.53752106707024], popup
 fg.add_child(folium.Marker(location=[43.197446787792344, -71.56230288791544], popup="Where James Was Born", icon=folium.Icon(color='white')))
 fg.add_child(folium.Marker(location=[43.205464025061836, -71.53772966913976], popup="Where We Got Married", icon=folium.Icon(color='pink')))
 fg.add_child(folium.Marker(location=[43.215114180773746, -71.50706865122623], popup="Where I Proposed to Kristal", icon=folium.Icon(color='pink')))
+fg.add_child(folium.Marker(location=[43.181401176547915, -71.3488198579006], popup="The Home of My Fearless Computer Programming Sensei", icon=folium.Icon(color='purple')))
 
 map.add_child(fg)
 
